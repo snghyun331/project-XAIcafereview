@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}"> 
+</head>
+<body>
+<div id="infos" >
+    {% for k, v in cafe_info.items() %}   
+        {% if k == 'cafe_name' %}
+            <h1> 카페 명: {{ v }}</h1>
+        {% elif k == 'average_star' %}
+            <h1> 전체 평점: {{ v }}</h1>
+        {% endif %}
+    {% endfor %}
+
+    {% if score >= 0.5 %}
+        <h2> {{score * 100}}%의 긍정반응 </h2>
+    {% elif score < 0.5 %}
+        <h2> {{(1-score) * 100}}%의 부정반응 </h2>
+    {% endif %}
+</div>
+    <div id="map" >
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d101280.09734874619!2d126.81999441640625!3d37.507846400000005!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x357ca1ddfa92c82d%3A0x9ab88ac1e130bc05!2z7Jik7ZuE7ZmN7L2p!5e0!3m2!1sko!2skr!4v1669720306823!5m2!1sko!2skr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <img src = "static/assets/img/wordcloud1_pos.png" width = 50%
+      height = "1000px">
+    <img src = "static/assets/img/wordcloud1_neg.png" width = 45%
+      height = "900px">
+
+
+<div id="page_mov" >
+    <!--
+  <form action=" " method="POST">
+        <button id="btn2" onclick="window.history.back()" type="submit" class="btn btn-primary">뒤로 가기</button>
+    </form>
+    -->
+    <button id="btn2" onclick="window.history.back()" class="btn btn-primary">뒤로 가기</button>
+
+</div>
+
+</body>
+</html>
