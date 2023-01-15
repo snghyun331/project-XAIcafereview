@@ -19,7 +19,7 @@
 4. 웹 서비스
 
 ## 서비스 아키텍처
-![그림2](https://user-images.githubusercontent.com/108854903/212527473-1bf09da6-0b9f-4ace-a3b3-70fde62e9bcc.png)
+![final](https://user-images.githubusercontent.com/108854903/212534861-26c5c5c8-512c-41ac-b1cb-56a63e892f89.png)
 
 ## 결과
 ![화면 캡처 2023-01-15 151719](https://user-images.githubusercontent.com/108854903/212527585-b42da73f-41ad-4d71-a2b4-a65332e24093.png)
