@@ -22,3 +22,4 @@
 ![그림2](https://user-images.githubusercontent.com/108854903/212527473-1bf09da6-0b9f-4ace-a3b3-70fde62e9bcc.png)
 
 ## 결과
+![그림3](https://user-images.githubusercontent.com/108854903/212527537-ab698b2c-2bcb-4d19-b704-e2de86dc6507.png)
